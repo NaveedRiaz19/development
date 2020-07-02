@@ -1,0 +1,486 @@
+body {
+
+    font: 14px Arial, sans-serif;
+    margin: 0px;
+    padding: 50px;
+}
+
+.abc {
+    width: 100%;
+}
+
+.header {
+    padding: 10px 20px;
+    background: #02bd5f;
+}
+
+.header h1 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+
+.container {
+    width: 100%;
+    background: #f2f2f2;
+
+}
+
+.nav,
+.section {
+    float: left;
+    padding: 20px;
+    min-height: 170px;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 20%;
+    height: 80%;
+    background: #d4d7dc;
+}
+
+.section {
+    width: 80%;
+}
+
+.nav ul {
+    list-style: none;
+    line-height: 24px;
+    padding: 0px;
+}
+
+.nav ul li a {
+    color: rgb(255, 255, 255);
+
+
+}
+
+.navigation:after {
+    content: ".";
+    display: block;
+    height: 0%;
+    clear: both;
+    visibility: hidden;
+}
+
+.footer {
+    background: #02bd5f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Button CSS */
+
+.button {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(7, 161, 77);
+
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    /* For mobile phones: */
+
+    .body {
+        width: 100%;
+        display: block;
+
+    }
+
+    .button {
+        width: 100%;
+        display: block;
+
+    }
+
+    .container .abc .header {
+        width: 100%;
+        display: block;
+
+
+    }
+
+    .nav {
+        width: 100%;
+        display: block;
+
+
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .homeheading {
+        text-align: center;
+    }
+
+    
+
+
+}
+
+
+/* Tickets Cards CSS Start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    height: auto;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+
+
+/* Tickets Cards CSS End */
+
+
+
+/* Model Forms CSS  START */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 12px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+#myBtn{
+    float: right;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    color: #04552d;
+    border-radius: 5px;
+}
+#myBtn:hover{
+    background-color: #b3ff00;
+    text-decoration: none;
+    border: none;
+}
+
+
+/* MOdel Form CSS END */
+
+
+
+
+/* ToDo List Start */
+
+
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 20px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 80%;
+    text-align: left;
+    float: left;
+    margin-left: 15px;
+    
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+ /* Style the input */
+ input {
+    background-color: rgba(170, 219, 170, 0.473);
+    color: green;
+    margin-top: 0px;
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    padding: 10px;
+    float: center;
+    font-size: 16px;
+  }
+
+  /* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 10%;
+    background:  #04552d;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+   /* Style the "Edit" button */
+.editBtn {
+    padding: 10px;
+    width: 10%;
+    background:  #13c47a;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .editBtn:hover {
+    background-color: #bbb;
+  }
+
+    /* Style the "Delete" button */
+.dltBtn {
+    padding: 10px;
+    width: 10%;
+    background:  #b80d0d;
+    color: rgb(255, 254, 254);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .dltBtn:hover {
+    background-color: #bbb;
+  }
+
+/* Style the header */
+.todo {
+    background-color: none;
+    padding: 0px 0px;
+    color: #04552d;
+    text-align: center;
+  }
+  /* Clear floats after the header */
+.todo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+
+
+
+  @media only screen and (max-width: 600px) {
+      .todo{
+         
+        margin-bottom: 20px;
+      }
+      input {
+          width: 57%;
+      }
+
+      .addBtn{
+          
+          margin: 10px;
+        display: block;
+        width: auto;
+    }
+
+    .editBtn{
+        margin: 10px;
+        display: block;
+        width: auto;
+      }
+
+      .dltBtn{
+        margin: 10px;
+          display: block;
+          width: auto;
+      }
+      
+  }
+  
+ 

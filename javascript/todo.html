@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+    </ul>
+    <button onclick="removeLI()">test</button>
+</body>
+
+<script>
+
+var items = document.querySelectorAll("#list li")
+    var tab = [];
+    console.log(tab)
+
+    // populate tab with li data
+    for (var i = 0; i < items.length; i++) {
+        tab.push(items[i].innerHTML);
+    }
+
+    // get li index using tab array on li click event
+    for (var i = 0; i < items.length; i++) {
+        items[i].onclick = function () {
+            liIndex = tab.indexOf(this.innerHTML);
+            console.log(this.innerHTML + " INDEX = " + liIndex);
+        };
+    }
+
+    function removeLI() {
+        items[liIndex].parentNode.removeChild(items[liIndex]);
+    } 
+
+</script>
+
+</html>

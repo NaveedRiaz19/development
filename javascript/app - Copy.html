@@ -1,0 +1,408 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>MY APP</title>
+
+    <style>
+        body {
+
+            font: 14px Arial, sans-serif;
+            margin: 0px;
+            padding: 50px;
+        }
+
+        .abc {
+            width: 100%;
+        }
+
+        .header {
+            padding: 10px 20px;
+            background: #02bd5f;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+
+
+        .container {
+            width: 100%;
+            background: #f2f2f2;
+
+        }
+
+        .nav,
+        .section {
+            float: left;
+            padding: 20px;
+            min-height: 170px;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 20%;
+            height: 80%;
+            background: #d4d7dc;
+        }
+
+        .section {
+            width: 80%;
+        }
+
+        .nav ul {
+            list-style: none;
+            line-height: 24px;
+            padding: 0px;
+        }
+
+        .nav ul li a {
+            color: rgb(255, 255, 255);
+
+
+        }
+
+        .navigation:after {
+            content: ".";
+            display: block;
+            height: 0%;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .footer {
+            background: #02bd5f;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+
+        /* Button CSS */
+
+        .button {
+            background-color: rgb(252, 252, 252);
+            width: 100%;
+            height: 50px;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: rgb(7, 161, 77);
+
+        }
+
+
+
+        @media only screen and (max-width:600px) {
+
+            /* For mobile phones: */
+
+            .body {
+                width: 100%;
+                display: block;
+
+            }
+
+            .button {
+                width: 100%;
+                display: block;
+
+            }
+
+            .container .abc .header {
+                width: 100%;
+                display: block;
+
+
+            }
+
+            .nav {
+                width: 100%;
+                display: block;
+
+
+            }
+            
+            .section{
+                width: 100%;
+            }
+
+            .homeheading{
+                text-align: center;
+            }
+
+
+        }
+
+
+        /* Tickets Cards CSS Start */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media only screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .card {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        /* Tickets Cards CSS End */
+        
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ********** LETS START HTML **************-->
+
+    <div class="container abc">
+        <div class="container">
+            <div class="header">
+                <h1>MY APPLICATION</h1>
+            </div>
+
+            <!--************************** BUTTON AREA START ***********************************************-->
+
+            <div class="wrapper navigation">
+                <div class="nav">
+                    <ul>
+                        <button onclick="div1()" class="button">HOME</button><br><br>
+                        <button onclick="div2()" class="button">TICKETS</button> <br><br>
+                        <button onclick="div3()" class="button">FORM</button>
+
+                    </ul>
+                </div>
+
+                <!--************************** BUTTON AREA END ***********************************************-->
+
+
+
+                <!--************************** HOME AREA START ***********************************************-->
+
+                <div class="section" id="formate0" style="font-family:'Times New Roman', Times, serif;">
+                    <h1 class="homeheading">WELCOME TO MY APPLICATION PAGE !</h1>
+                    <img src="app2.jpg" width="100%" height="60%" alt="">
+
+                </div>
+
+                <div class="section" id="formate1" style="display: none;">
+                    <h2>Welcome to MY APP HOME PAGE</h2>
+                    <p>Here you will Get more Applications! Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Asperiores accusamus pariatur quaerat ipsum velit eveniet, laudantium modi natus
+                        necessitatibus
+                        totam deleniti unde praesentium illum omnis fuga corrupti, sunt officia at! Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Repellendus suscipit aut ipsa vero facere, unde,
+                        fugiat
+                        omnis enim adipisci tenetur fuga, facilis ipsam numquam! Nobis veritatis veniam nesciunt rem
+                        illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facere nisi accusamus
+                        aliquid officia voluptatem eum, minus asperiores nulla expedita animi laborum id error quae
+                        aperiam dolor itaque, veniam quod?</p>
+                </div>
+
+                <!--************************** HOME AREA END ***********************************************-->
+
+
+
+                <!--************************** TICKET AREA START ***********************************************-->
+
+                <div class="section" id="formate2" style="display: none;">
+                    <h2>Welcome to MY APP TICKET PAGE</h2>
+                    <p>Here you will Get more Applications Tickets!</p>
+
+                    <!-- Tickets Cards Code Start-->
+
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <h3>Ticket 1</h3>
+                                <p>Some text</p>
+                                <p>Some text</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tickets Cards Code End-->
+
+                </div>
+
+                <!--************************** TICKET AREA END ***********************************************-->
+
+
+
+                <div class="section" id="formate3" style="display: none;">
+                    <h2>Welcome to MY APP FORM PAGE</h2>
+                    <p>Here you will Get more Applications FORM!</p>
+
+                    <form name="myform">
+                        <p id="alerttext" style="color: red;"></p>
+
+                        <label>First name:</label><br>
+                        <input type="text" id="fname"><br><br>
+
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname"><br><br>
+
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email"><br><br>
+
+                        <label for="phone"> Phone Number</label><br>
+                        <input type="text"  id="phone"><br><br>
+                        
+                        
+                    </form>
+
+                    <button onclick="ans()"> Submit</button>
+                    
+                    <p id="success" style="color: green;"></p>
+
+                </div>
+
+
+            </div>
+            <div class="footer">
+                <p>copyright &copy; MYAPP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!--******************************* JAVASCRIPT START *************************************-->
+
+<script>
+
+
+    /* Button Script Start */
+       
+
+    function div1() {
+        document.getElementById("formate0").style.display = "none";
+        document.getElementById("formate1").style.display = "block";
+        document.getElementById("formate2").style.display = "none";
+        document.getElementById("formate3").style.display = "none";
+    };
+
+
+    function div2() {
+        document.getElementById("formate0").style.display = "none";
+        document.getElementById("formate1").style.display = "none";
+        document.getElementById("formate2").style.display = "block";
+        document.getElementById("formate3").style.display = "none";
+    };
+
+    function div3() {
+        document.getElementById("formate0").style.display = "none";
+        document.getElementById("formate1").style.display = "none";
+        document.getElementById("formate2").style.display = "none";
+        document.getElementById("formate3").style.display = "block";
+    };
+
+    /* Button Script End */
+
+    /* Form Javascript Start */
+
+    /* function ans() {
+        var a = document.getElementById("fname").value;
+        var b = document.getElementById("lname").value;
+        alert(a + " " + b);
+    }
+ */
+
+
+/*******************  FORM FUNCTION START ********************/ 
+
+    function ans(){
+        
+    var fname = document.getElementById('fname').value
+    var lname = document.getElementById('lname').value
+    var email = document.getElementById('email').value
+    var phone = document.getElementById('phone').value
+    
+    document.myform.reset();
+
+    /*******************  FORM FUNCTION ALERT CONDITION START ********************/ 
+
+   /*  if (fname, lname, email, phone == ""){
+    alert("please fill all fields");
+    }
+    else{
+        alert("successfull submited");
+    } */
+
+/*******************  FORM FUNCTION ALERT CONDITION END ********************/ 
+
+
+
+/*******************  FORM FUNCTION innerHTML CONDITION START ********************/ 
+
+
+    if (fname, lname, email, phone == ""){
+        document.getElementById("alerttext").innerHTML = "* Please fill all fields";
+    }
+    else{
+        document.getElementById("success").innerHTML = "Successfully Submitted";
+        document.getElementById("alerttext").style.display = "none";
+      
+    }
+
+
+    /*******************  FORM FUNCTION innerHTML CONDITION END ********************/ 
+
+    }
+
+    /*******************  FORM FUNCTION END ********************/ 
+
+    /* Form Javascript End */
+
+</script>
+
+</html>

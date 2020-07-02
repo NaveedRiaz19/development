@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <title>MY APP</title>
+
+    
+</head>
+
+
+<body>
+
+    <!-- ********** LETS START HTML **************-->
+
+    <div class="container abc">
+        <div class="container">
+            <div class="header">
+                <button  id="myBtn">Create Ticket</button>
+                <h1>MY APPLICATION</h1>
+                
+            </div>
+
+            <!--************************** BUTTON AREA START ***********************************************-->
+
+            <div class="wrapper navigation">
+                <div class="nav">
+                    <ul>
+                        <button onclick="div1()" class="button">HOME</button><br><br>
+                        <button onclick="div2()" class="button">TICKETS</button> <br><br>
+                        <button onclick="div3()" class="button">ToDo List</button> <br><br>
+                       
+
+                    </ul>
+                </div>
+
+                <!--************************** BUTTON AREA END ***********************************************-->
+
+
+
+                <!--************************** HOME AREA START ***********************************************-->
+
+                <div class="section" id="formate0" style="font-family:'Times New Roman', Times, serif;">
+                    <h1 class="homeheading">WELCOME TO MY APPLICATION PAGE !</h1>
+                    <img src="app2.jpg" width="100%" height="60%" alt="">
+
+                </div>
+
+                <div class="section" id="formate1" style="display: none;">
+                    <h2>Welcome to MY APP HOME PAGE</h2>
+                    <p>Here you will Get more Applications! Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Asperiores accusamus pariatur quaerat ipsum velit eveniet, laudantium modi natus
+                        necessitatibus
+                        totam deleniti unde praesentium illum omnis fuga corrupti, sunt officia at! Lorem ipsum
+                        dolor
+                        sit amet consectetur adipisicing elit. Repellendus suscipit aut ipsa vero facere, unde,
+                        fugiat
+                        omnis enim adipisci tenetur fuga, facilis ipsam numquam! Nobis veritatis veniam nesciunt rem
+                        illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facere nisi accusamus
+                        aliquid officia voluptatem eum, minus asperiores nulla expedita animi laborum id error quae
+                        aperiam dolor itaque, veniam quod?</p>
+                </div>
+
+                <!--************************** HOME AREA END ***********************************************-->
+
+
+
+                <!--************************** TICKET AREA START ***********************************************-->
+
+
+
+                <!-- Trigger/Open The Modal -->
+                
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>TICKET FORM</h2>
+                        </div>
+                        <div class="modal-body">
+                            
+
+                            <!-- Start-->
+
+                            
+            
+                                <form name="myform" style="text-align: center;">
+                                    <p id="alerttext" style="color: red;"></p>
+            
+                                    <label>First name:</label><br>
+                                    <input type="text" id="fname"><br><br>
+            
+                                    <label for="lname">Last name:</label><br>
+                                    <input type="text" id="lname"><br><br>
+            
+                                    <label for="email">Email Address:</label><br>
+                                    <input type="email" id="email"><br><br>
+            
+                                    <label for="phone"> Phone Number</label><br>
+                                    <input type="text" id="phone"><br><br>
+            
+            
+                                </form>
+            
+                                
+            
+                                <p id="success" style="color: green; text-align: center;"></p>
+            
+                            
+
+                            <!-- End -->
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="ans()" class="submit" style="margin-left: 40%; width: 20%;"> Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Trigger/close The Modal -->
+
+                <div class="section" id="formate2" style="display: none;">
+                    <h2>Welcome to MY APP TICKET PAGE</h2>
+                    <p>Here you will Get more Applications Tickets!</p>
+
+                    <!-- Tickets Cards Code Start-->
+
+                    <div class="row" id="row">
+                       
+
+                    </div>
+
+                    <!-- Tickets Cards Code End-->
+
+                </div>
+
+                <!--************************** TICKET AREA END ***********************************************-->
+
+
+                <!--************************** ToDo List Start *****************************************************-->
+
+                 <div name="textarea" class="todo" id="formate3" style="display: none;">
+                    <br><br><br><br>
+                    <h2 style="margin: 10px; font-family:'Times New Roman', Times, serif;">My To Do List</h2>
+                    <input type="text" id="myInput" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                    <span onclick="editline()"class="editBtn">Edit</span>
+                    <span onclick="removeline()"class="dltBtn">Delete</span>
+
+                    <ul id="myUL">
+                        <li>First </li>
+                        <li class="checked">Second </li>
+                        <li>Third  </li>
+                        <li>Fourth </li>
+                        
+                      </ul>
+                      <br>
+                      <br>
+                     
+                  </div>
+
+
+              
+             
+                  
+                 
+               
+ 
+             <!--************************** ToDo List End *****************************************************-->
+
+
+            </div>
+            <div class="footer">
+                <p>copyright &copy; MYAPP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!--******************************* JAVASCRIPT START *************************************-->
+
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="todolist.js"></script>
+
+</html>
