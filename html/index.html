@@ -11,6 +11,17 @@
             box-sizing: border-box;
         }
 
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .center,
+            .right {
+                width: 100%;
+
+            }
+
+        }
+
         /* menu Bar Start */
         .nav {
             text-align: center;
@@ -53,8 +64,8 @@
 
         /* Logo Title End */
 
-       
-       
+
+
         /* Cover Text start */
 
         .btn:link,
@@ -86,45 +97,59 @@
 
         /* Courses css start */
 
-        .space {
-            margin-bottom: 100px;
-        }
-
         .left {
-
-            background-color: rgb(121, 70, 3);
-            color: white;
-            padding: 50px;
             float: left;
-            width: 33.3%;
+            width: 34%;
+            height: 600px;
+            background: rgb(177, 121, 1);
+            padding: 20px;
+
+
+
 
         }
 
         .center {
-
-            background-color: rgb(196, 114, 6);
-            color: white;
-            padding: 50px;
             float: left;
-            width: 33.3%;
+            width: 33%;
+            height: 600px;
+            background: rgb(255, 145, 0);
+            padding: 20px;
+
+
+
         }
 
         .right {
-
-            background-color: rgb(121, 70, 3);
-            color: white;
-            padding: 50px;
             float: left;
-            width: 33.3%;
-        }
+            width: 33%;
+            height: 600px;
+            background: rgb(156, 76, 1);
+            padding: 20px;
 
+
+
+        }
 
         .courses {
+            background-color: burlywood;
+            color: black;
+            padding: 15px 25px;
             text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+        .CIT {
+            text-transform: uppercase;
+            text-align: left;
+            padding: 10px;
         }
 
 
-        /* Courses css start */
+        /* Courses css End */
 
 
 
@@ -134,8 +159,10 @@
             background-color: rgb(56, 37, 13);
             color: white;
             text-align: center;
-            padding: 1px;
-            vertical-align: middle;
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
         /* Footer section End */
@@ -182,36 +209,60 @@
 
     <!--Courses section start-->
 
-    <section class="space">
-        <div class="left">
 
-            <p class="courses">CIT COURSE</p>
+    <div class="left">
+        <p class="courses">CIT COURSES</p>
+        <p class="CIT">MS Office. (MS Word, MS Excel, MS Powerpoint, MS Access, MS Outlook, Typing).</p>
+        <p class="CIT"> Web Designing. ...</p>
+        <p class="CIT">Graphic Designing. ...</p>
+        <p class="CIT">Computer Hardware. ...</p>
+        <p class="CIT"> Networking.</p>
+        <p class="CIT">Internet.</p>
+       
+        
+        
+       
+        
+    </div>
 
-        </div>
+    <div class="center">
+        <p class="courses">GRAPHIC DESIGNING</p>
+        <p>Photoshop --- 3 months</p>
+    </div>
 
-        <div class="center">
+    <div class="right">
+        <p class="courses">WEB DEVELOPMENT</p>
+    </div>
 
-            <p class="courses">GRAPHIC DESIGNING</p>
 
-        </div>
 
-        <div class="right">
-
-            <p class="courses">WEB DEVELOPMENT</p>
-        </div>
-        <br> <br> <br> <br> <br> <br>
-    </section>
-    
     <!--Courses section End-->
+
+    <div>
+
+        <img src="download.jpg" style="width: 30%; height: 30%; margin: 30px; float: left;">
+
+    </div>
+
+    <div>
+
+        <img src="download.jpg" style="width: 30%; height: 30%; margin: 30px; float: left;">
+
+    </div>
+
+    <div>
+
+        <img src="download.jpg" style="width: 30%; height: 30%; margin: 30px; float: left;">
+
+    </div>
 
 
 
     <!--Footer section start-->
     <div class="footer">
-      
         <h3>All Right Reserved | TLCC</h3>
     </div>
-    
+
 
     <!--Footer section End-->
 
